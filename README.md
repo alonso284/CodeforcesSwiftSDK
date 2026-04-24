@@ -12,6 +12,26 @@ A clean, production-grade Swift framework wrapping the [Codeforces API](https://
 
 ## Installation
 
+### Swift Package Manager (Recommended)
+
+Add the dependency to your `Package.swift`:
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/alonso284/CodeforcesSwiftSDK.git", from: "1.0.0"),
+]
+```
+
+Then add `"Codeforces"` to your target's dependencies:
+
+```swift
+.target(name: "YourApp", dependencies: ["Codeforces"]),
+```
+
+Or in Xcode: **File → Add Package Dependencies…** and enter the repository URL.
+
+### Xcode Project
+
 Add the `Codeforces.xcodeproj` to your Xcode workspace, or include the `Codeforces/` directory as a framework target dependency.
 
 ## Quick Start
